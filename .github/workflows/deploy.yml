@@ -19,4 +19,3 @@ jobs:
             - name: Deploy
               run: |
                 echo "Deployed"
-                exit 1
