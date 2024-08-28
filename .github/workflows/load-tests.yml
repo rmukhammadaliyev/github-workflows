@@ -1,11 +1,12 @@
 name: Load tests
 
 on:
-    workflow_run: ["Deployment pipeline"]
-    types:
-        - completed
-    conclusions:
-        - success
+    workflow_run:
+        workflows: ["Deployment pipeline"]
+        types:
+            - completed
+        conclusions:
+            - success
 
 jobs:
     load-tests:
